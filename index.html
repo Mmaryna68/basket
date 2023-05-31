@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Корзина</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h1><i class="fas fa-shopping-cart"></i> Корзина</h1>
+    <main>
+      <ul id="cart">
+        <li>
+          <img src="images/item1.jpg" alt="Item 1" />
+          <h2>Футболка Levi's</h2>
+          <p class="price">$20</p>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </li>
+        <li>
+          <img src="images/item2.jpg" alt="Item 2" />
+          <h2>Платье Zara</h2>
+          <p class="price">$25</p>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </li>
+        <li>
+          <img src="images/item3.jpg" alt="Item 3" />
+          <h2>Кроссовки Nike</h2>
+          <p class="price">$70</p>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </li>
+        <li>
+          <img src="images/item4.jpg" alt="Item 4" />
+          <h2>MacBook Air</h2>
+          <p class="price">$535</p>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </li>
+      </ul>
+      <div id="total">
+        <p>Total: <span id="total-value">$0</span></p>
+        <button id="discount-btn" onclick="applyDiscount()">
+          Использовать купон на 20%
+        </button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

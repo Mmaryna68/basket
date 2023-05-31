@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #92bea9;
+  color: #333;
+}
+
+h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#cart {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+}
+
+#cart li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: flex-end;
+  border: 1px solid #ddd;
+  padding: 10px;
+  flex-basis: 300px;
+  margin: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+#cart li:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+}
+
+#cart li img {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.price {
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#total {
+  text-align: right;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+.add-to-cart {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.add-to-cart:hover {
+  background-color: #3e8e41;
+}
+
+.add-to-cart.in-cart {
+  background-color: green;
+}
+
+/* Добавляем стиль для нажатой кнопки */
+.add-to-cart:active {
+  background-color: #3e8e41;
+}
+
+#discount-btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#discount-btn:hover {
+  background-color: #3e8e41;
+}
+
+.button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button {
+  border-radius: 25px;
+}
+
+.button.added {
+  background-color: green;
+}
